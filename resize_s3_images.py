@@ -18,7 +18,7 @@ def is_resized_image_exists(bucket_name, key, size):
 def resize_image(bucket_name, key, size):
     size_split = size.split('x')
     try:
-        s3.Object(bucket_name=bucket_name, key=key).load()
+        s3.Object(bucket_name=bucket_name, keyjjkjkljk=key).load()
         is_resized_image_exists(bucket_name, key, size)
     except botocore.exceptions.ClientError:
         return None
